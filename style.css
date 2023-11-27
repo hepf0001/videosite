@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*menu desktop*/
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    overflow-x: auto;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li a:hover {
+ color: #a05a68;
+}
+
+nav a{
+ margin: 12px;
+ font-size: 25px;
+ text-decoration: none;
+ color: #b66878;
+ font-family: 'Fjalla One', sans-serif;
+}
+
+  /*skrift*/
+  p{
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  h1{
+    font-family: 'Fjalla One', sans-serif;
+    padding: 10px;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  h2{
+    font-family: 'Fjalla One', sans-serif;
+    color: #b66878;
+    padding: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  h3{
+    font-family: 'Fjalla One', sans-serif;
+    color: #b66878;
+    padding: 10px;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+
+
+
+/* Billede med tekst */
+.billede_med_tekst {
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+  }
+
+
+
+  /* gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns:
+      repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  
+  .gallery img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  /* Videoer */
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  	
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.billede_med_tekst{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.om_interview{
+    padding-bottom: 20px;   
+}
+
+
+
+
+  @media (min-width:850px){
+    main {
+        margin: 0 auto 0 auto;
+        max-width: 1100px;
+       } 
+       
+       h3{
+        font-size: 20px;
+    }
+
+    .om_interview{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px; 
+    }
+    
+    .anna_billede{
+        grid-column: 1/2;
+        height: 100%;
+      }
+
+      .anna_tekst{
+        grid-column: 2/6;
+      }
+
+}
